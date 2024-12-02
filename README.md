@@ -1,50 +1,103 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React GIF Search App
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación desarrollada en React que permite buscar GIFs utilizando la API de Giphy. Incluye un diseño moderno y funcionalidades que facilitan la experiencia del usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
 
-## Expanding the ESLint configuration
+- **Búsqueda de GIFs**: Permite buscar GIFs en tiempo real utilizando la API de Giphy.
+- **Diseño moderno**: Barra de búsqueda estilizada, encabezado atractivo y animaciones suaves.
+- **Tecnologías utilizadas**:
+  - React
+  - TypeScript
+  - Styled Components
+  - Axios
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Sigue estos pasos para clonar y ejecutar el proyecto localmente:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Chryrene/react-gif-chryrene.git
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd react-gif-chryrene
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🔑 Configuración de la API
+
+Este proyecto utiliza la API de Giphy para obtener los GIFs. Ya hemos integrado una clave API válida, pero puedes personalizarla:
+
+1. Abre el archivo `.env` en la raíz del proyecto.
+2. Asegúrate de que contenga:
+   ```env
+   VITE_GIPHY_API_KEY="API_KEY"
+   ```
+
+---
+
+## 🛠️ Estructura del Proyecto
+
+La estructura del proyecto es la siguiente:
+
+```
+src/
+  components/
+    GifCard.tsx       // Componente para mostrar un GIF individual
+    GifList.tsx       // Componente para renderizar la lista de GIFs
+    SearchBar.tsx     // Componente de la barra de búsqueda
+  styles/
+    GlobalStyles.ts   // Estilos globales con styled-components
+  App.tsx             // Componente principal de la aplicación
+  main.tsx            // Punto de entrada de la aplicación
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🌟 Funcionalidades Clave
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Barra de Búsqueda
+- Ubicada en el centro de la pantalla.
+- Bordes redondeados y efecto de foco animado.
+- Botón de búsqueda estilizado.
+
+### Visualización de GIFs
+- Cuadrícula responsiva que se ajusta a diferentes tamaños de pantalla.
+- Efecto de hover con escalado y sombras.
+
+---
+
+## 🖥️ Uso
+
+1. Escribe un término en la barra de búsqueda (por ejemplo, "cats").
+2. Haz clic en el botón de búsqueda o presiona **Enter**.
+3. Los GIFs relacionados aparecerán en una cuadrícula.
+
+---
+
+## 🛡️ Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+## 📬 Contacto
+
+Si tienes preguntas o sugerencias, no dudes en contactar:
+- **GitHub**: [Chryrene](https://github.com/Chryrene)
+- **Correo**: [tuemail@example.com](mailto:vpasosdev@gmail.com)
+
