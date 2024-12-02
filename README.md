@@ -99,7 +99,7 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para má
 
 Si tienes preguntas o sugerencias, no dudes en contactar:
 - **GitHub**: [Chryrene](https://github.com/Chryrene)
-- **Correo**: [tuemail@example.com](mailto:vpasosdev@gmail.com)
+- **Correo**: [vpasosdev@gmail.com](mailto:vpasosdev@gmail.com)
 
 
 Este programa es privado, ajeno a cualquier partido político. Queda prohibido el uso para fines distintos a los establecidos en el programa.
